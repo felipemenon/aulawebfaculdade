@@ -1,46 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="formato.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organização de voluntário</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ONG Casa Aberta — Início</title>
+  <link rel="stylesheet" href="imagem/Imagem do WhatsApp de 2025-10-31 à(s) 12.31.24_ce7ffa2d.jpg">
+  <meta name="description" content="ONG Casa Aberta — ações sociais, voluntariado e contato.">
 </head>
 <body>
-    <header>
-        <div class="imagemlogo">
-            <img src="/imagem/Imagem do WhatsApp de 2025-10-31 à(s) 12.31.24_ce7ffa2d.jpg" alt="LOGO">
-        </div>
-        <h1 class="logo">ONG Casa Aberta</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="projeto.html">Nosso projeto</a></li>
-                <li><a href="cadastro.html">Cadastro para voluntarios</a></li>
-            </ul>
-        </nav>
-    </header> 
-    
-    <main>
-        <section class="cabecalho">
-            <h2>Nos conheça</h2>
-            <p>Somos uma organização para combater a falta de moradia para pessoas em situação de rua sem fins lucrativos.</p>
-            <img src="imagem/moradores-de-rua-imagem-publica-18-07-19.jpg">
-        </section>
+  <header>
+    <div class="container">
+      <img src="assets/imagem/Imagem do WhatsApp de 2025-10-31 à(s) 12.31.24_ce7ffa2d.jpg" alt="Logotipo da Organização Exemplo" width="160">
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <section>
-            <h2>Nosso contato</h2>
-            <address>
-            </style>
-                <p> Endereço: Rua apaticagem, 873 Bairro: Parauê Cidade: São Paulo</p>
-                <p>Email: Contato@moradiaja.ong.br</p>
-                <p>Tel: (11) 00000-0000</p>
-            </address>
-        </section>
-    </main>
+  <main>
+    <article>
+      <header>
+        <h1>ONG Casa Aberta</h1>
+        <p>Promovendo ações sociais e voluntariado na comunidade.</p>
+      </header>
 
-    <footer>
-        <p>&copy; 2025 Ong para moradores de rua feeh.menon@gmail.com</p>
-    </footer>
+      <section aria-labelledby="sobre-nos">
+        <h2 id="sobre-nos">Sobre nós</h2>
+        <p>Somos uma organização sem fins lucrativos que visa ajudar pessoas em situação de rua.</p>
+        <figure>
+          <img src="assets/imagem/moradores-de-rua-imagem-publica-18-07-19.jpg" alt="Voluntários em ação" srcset="assets/imagem/moradores-de-rua-imagem-publica-18-07-19.jpg 480w, assets/imagem/moradores-de-rua-imagem-publica-18-07-19.jpg 1200w" sizes="(max-width:600px) 480px, 1200px">
+          <figcaption>Voluntários em uma ação comunitária.</figcaption>
+        </figure>
+      </section>
+
+      <section aria-labelledby="contato">
+        <h2 id="contato">Contato</h2>
+        <address>
+          <p>Email: <a href="mailto:contato@organizacaoexemplo.org">contato@ONGcasaaberta.org</a></p>
+          <p>Telefone: <a href="tel:+5511999999999">+55 (11) 99999-9999</a></p>
+        </address>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> ONG Casa Aberta — Todos os direitos reservados.</p>
+    <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+  </footer>
 </body>
 </html>
