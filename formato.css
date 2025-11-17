@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: rgb(100, 24, 24);
+}
+
+header{
+    background: linear-gradient(
+        180deg,
+        #8eafb6 0%,
+        #c7af97 100%);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 20%;
+}
+
+nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    position: relative;
+    top: -50%;
+}
+
+nav ul{
+    display: flex;
+    list-style: nome;
+    gap: 2rem;
+}
+
+nav a{
+    color: aliceblue;
+    text-decoration: nome;
+    transition: nome;
+    font-weight: 500;
+    opacity: 0.8s;
+}
+
+nav a:hover,
+nav a.active{
+    opacity: 1;
+    font-weight: bold;
+    cursor: url('cursor/lightsabergreen2.cur'), auto;
+}
+.hero{
+    background: linear-gradient(), url();
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+    display: flex;
+    align-items: 0;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 150px;
+    width: 300px;
+    right: 70%;
+    position: absolute;
+}
+
+.imagemlogo{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    object-fit: scale-down; 
+    position: relative;
+    left: 1%;
+}
+.imagemlogo img{
+    width: 150px;
+}
+.logo{
+    position: relative;
+    left: 10%;
+    top: -62%;;
+}
+.cabecalho{
+
+}

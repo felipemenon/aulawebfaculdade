@@ -1,33 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de voluntarios</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ONG Casa Aberta — Início</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="ONG Casa Aberta — ações sociais, voluntariado e contato.">
 </head>
 <body>
-    <header>
-        <h1>Cadastro de voluntários a causa</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="projeto.html">Nosso projeto</a></li>
-                <li><a href="cadastro.html">Cadastro para voluntarios</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="container">
+      <img src="/imagem/Imagem do WhatsApp de 2025-10-31 à(s) 12.31.24_ce7ffa2d.jpg" alt="Logotipo da Organização Exemplo" width="160">
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section>
-            <h2>Formulario de cadastro</h2>
-            <form>
-                <fieldset>
-                    <legend>Dados Pessoais</legend>
-                    <label for="nome">Nome completo:</label>
-                    <input type="text" id="nome" required>
-                </fieldset>
-            </form>
-        </section>
-    </main>
+  <main>
+    <article>
+      <header>
+        <h1>ONG Casa Aberta</h1>
+        <p>Promovendo ações sociais para moradores de rua.</p>
+      </header>
+
+      <section aria-labelledby="sobre-nos">
+        <h2 id="sobre-nos">Sobre nós</h2>
+        <p>Somos uma organização em que visa ajudar e acolher moradores de rua em situações de necessidade</p>
+        <figure>
+          <img src="imagem/imagem_materia.jpeg" alt="Voluntários em ação" srcset="imagem/iamgem_materia.jpeg 480w, assets/img/hero.jpg 1200w" sizes="(max-width:600px) 480px, 1200px">
+          <figcaption>Voluntários em uma ação comunitária.</figcaption>
+        </figure>
+      </section>
+
+      <section aria-labelledby="contato">
+        <h2 id="contato">Contato</h2>
+        <address>
+          <p>Email: <a href="mailto:contato@organizacaoexemplo.org">contato@organizacaocasaaberta.org</a></p>
+          <p>Telefone: <a href="tel:+5511999999999">+55 (11) 99999-9999</a></p>
+        </address>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> ONG Casa Aberta — Todos os direitos reservados.</p>
+    <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+  </footer>
 </body>
 </html>
