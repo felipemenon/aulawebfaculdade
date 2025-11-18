@@ -4,52 +4,60 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>ONG Casa Aberta — Início</title>
-  <link rel="stylesheet" href="imagem/Imagem do WhatsApp de 2025-10-31 à(s) 12.31.24_ce7ffa2d.jpg">
-  <meta name="description" content="ONG Casa Aberta — ações sociais, voluntariado e contato.">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="assets/imagem/Imagem do WhatsApp de 2025-10-31 à(s) 12.31.24_ce7ffa2d.jpg" alt="Logotipo da Organização Exemplo" width="160">
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="nav__logo">ONG Casa  Aberta</a>
       <nav aria-label="Menu principal">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html">Cadastro</a></li>
+        <ul class="nav__menu" role="menubar">
+          <li role="none"><a role="menuitem" href="index.html">Início</a></li>
+          <li role="none"><a role="menuitem" href="projetos.html">Projetos</a></li>
+          <li role="none"><a role="menuitem" href="cadastro.html">Cadastro</a></li>
         </ul>
       </nav>
+      <button class="hamburger" aria-label="Abrir menu" aria-controls="mobile-menu">☰</button>
     </div>
   </header>
 
-  <main>
-    <article>
-      <header>
-        <h1>ONG Casa Aberta</h1>
-        <p>Promovendo ações sociais e voluntariado na comunidade.</p>
-      </header>
+  <main class="container">
+    <article class="hero">
+      <header><h1>Bem-vindo à nossa ONG</h1></header>
+      <p>Trabalhamos para transformar vidas por meio de ações sociais.</p>
 
-      <section aria-labelledby="sobre-nos">
-        <h2 id="sobre-nos">Sobre nós</h2>
-        <p>Somos uma organização sem fins lucrativos que visa ajudar pessoas em situação de rua.</p>
-        <figure>
-          <img src="assets/imagem/moradores-de-rua-imagem-publica-18-07-19.jpg" alt="Voluntários em ação" srcset="assets/imagem/moradores-de-rua-imagem-publica-18-07-19.jpg 480w, assets/imagem/moradores-de-rua-imagem-publica-18-07-19.jpg 1200w" sizes="(max-width:600px) 480px, 1200px">
-          <figcaption>Voluntários em uma ação comunitária.</figcaption>
-        </figure>
-      </section>
+      <div class="cards mt-2">
+        <article class="card">
+          <img src="imagens/projeto1.jpeg" alt="Projeto social 1">
+          <div class="card-body">
+            <h3>Projeto Esperança</h3>
+            <p>Atendimento a famílias em situação de vulnerabilidade.</p>
+            <div class="mt-2">
+              <a href="projetos.html" class="btn btn-primary">Saiba mais</a>
+            </div>
+          </div>
+        </article>
 
-      <section aria-labelledby="contato">
-        <h2 id="contato">Contato</h2>
-        <address>
-          <p>Email: <a href="mailto:contato@organizacaoexemplo.org">contato@ONGcasaaberta.org</a></p>
-          <p>Telefone: <a href="tel:+5511999999999">+55 (11) 99999-9999</a></p>
-        </address>
-      </section>
+        <article class="card">
+          <img src="imagens/projeto3.webp" alt="Projeto social 2">
+          <div class="card-body">
+            <h3>Projeto Futuro</h3>
+            <p>Capacitações e cursos gratuitos para jovens.</p>
+            <div class="mt-2">
+              <a href="projetos.html" class="btn btn-secondary">Ver projetos</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </article>
   </main>
 
-  <footer>
-    <p>&copy; <span id="ano"></span> ONG Casa Aberta — Todos os direitos reservados.</p>
-    <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+  <footer class="footer p-2">
+    <div class="container">
+      <p class="small">© 2025 Organização Exemplo</p>
+    </div>
   </footer>
+
+  <script src="js/menu.js" defer></script>
 </body>
 </html>

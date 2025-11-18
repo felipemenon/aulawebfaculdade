@@ -1,3 +1,4 @@
+// js/masks.js
 document.addEventListener('input', (e) => {
   const el = e.target;
   if (!el.matches('#cpf, #telefone, #cep')) return;
@@ -15,7 +16,6 @@ document.addEventListener('input', (e) => {
 
   if (id === 'telefone') {
     if (v.length > 11) v = v.slice(0,11);
-    // celular 11 dígitos: (99) 99999-9999  / fixo 10 dígitos: (99) 9999-9999
     if (v.length <= 10) {
       v = v.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3').replace(/-$/, '');
     } else {

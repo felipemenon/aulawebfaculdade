@@ -1,45 +1,55 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Projetos — Organização Exemplo</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projetos — ONG Casa Aberta</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <a href="index.html" aria-label="Voltar para a página inicial">← Início</a>
-    <h1>Projetos Sociais</h1>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="nav__logo">ONG Casa Aberta</a>
+      <nav aria-label="Menu principal">
+        <ul class="nav__menu" role="menubar">
+          <li role="none"><a role="menuitem" href="index.html">Início</a></li>
+          <li role="none"><a role="menuitem" href="projetos.html">Projetos</a></li>
+          <li role="none"><a role="menuitem" href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Abrir menu" aria-controls="mobile-menu">☰</button>
+    </div>
   </header>
 
-  <main>
-    <section aria-labelledby="voluntariado">
-      <h2 id="voluntariado">Voluntariado</h2>
-      <p>Para ser voluntariado basta se cadastrar em nossa aba de cadastro e ser maior de idade.</p>
+  <main class="container">
+    <h1>Projetos Sociais</h1>
 
-      <article aria-labelledby="projeto-1">
-        <h3 id="projeto-1">Projeto Alfabetização</h3>
-        <p>Projeto que ajuda crianças a se desenvolverem e situação de rua, dando educação e direito de estudos.</p>
-        <figure>
-          <img src="assets/imagem/crianca.jpeg" alt="Crianças em aula de alfabetização" width="600">
-          <figcaption>Alfabetização de crianças.</figcaption>
-        </figure>
+    <div class="cards mt-2">
+      <article class="card">
+        <img src="imagens/projeto2.jpeg" alt="Voluntariado">
+        <div class="card-body">
+          <h3>Projeto Alfabetização</h3>
+          <p>Apoio educacional para crianças.</p>
+          <div class="mt-2"><a href="#" class="btn btn-primary">Quero ser voluntário</a></div>
+        </div>
       </article>
-    </section>
 
-    <section aria-labelledby="doar">
-      <h2 id="doar">Como doar</h2>
-      <p>Sua doação não vale apenas pelo dinheiro, se você puder ajudar com seu tempo e se voluntariar também é de grande ajuda.</p>
-      <ul>
-        <li>Doação online: Pix <strong>00000000-0000</strong></li>
-        <li>Doação de roupas e alimentos — Rua apaticagem, 107 das 08h00 às 17h00</li>
-      </ul>
-    </section>
+      <article class="card">
+        <img src="imagens/doacao.png" alt="Doações">
+        <div class="card-body">
+          <h3>Campanha de Doações</h3>
+          <p>Doação de alimentos e roupas para famílias.</p>
+          <div class="mt-2"><a href="#" class="btn btn-secondary">Como doar</a></div>
+        </div>
+      </article>
+    </div>
+
   </main>
 
-  <footer>
-    <p>&copy; ONG Casa Aberta</p>
+  <footer class="footer p-2">
+    <div class="container">
+      <p class="small">© 2025 Organização Exemplo</p>
+    </div>
   </footer>
 </body>
 </html>
-
